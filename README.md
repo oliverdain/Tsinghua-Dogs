@@ -41,9 +41,11 @@ The dataset provides two versions of images to download: high resolution and low
 * Low resolution
   * Images (2.5 GB): [low-resolution](https://cloud.tsinghua.edu.cn/f/80013ef29c5f42728fc8/?dl=1)
   * Annotations: [low-annotations](https://cg.cs.tsinghua.edu.cn/ThuDogs/low-annotations.zip)
+  * The above are both zip files.
 * High resolution
   * Images (38.8GB): [high-resolution.001](https://cloud.tsinghua.edu.cn/f/d2031efb239c4dde9c6c/?dl=1),[high-resolution.002](https://cloud.tsinghua.edu.cn/f/6a242a6bba664537ba45/?dl=1),[high-resolution.003](https://cloud.tsinghua.edu.cn/f/d17034fa14f54e4381d8/?dl=1),[high-resolution.004](https://cloud.tsinghua.edu.cn/f/3740fc44cd484e1cb089/?dl=1),[high-resolution.005](https://cloud.tsinghua.edu.cn/f/ff5d96a0bc4e4dba9004/?dl=1),[high-resolution.006](https://cloud.tsinghua.edu.cn/f/d5fe5c88198c4387a7bb/?dl=1),[high-resolution.007](https://cloud.tsinghua.edu.cn/f/b13d6710ac85487e9487/?dl=1),[high-resolution.008](https://cloud.tsinghua.edu.cn/f/b6cf354fd04b4fe0b909/?dl=1),[high-resolution.009](https://cloud.tsinghua.edu.cn/f/06a421a528044b15838c/?dl=1)
   * Annotations: [high-annotations](https://cg.cs.tsinghua.edu.cn/ThuDogs/high-annotations.zip)
+  * The annotations are a zip file. The images are each partial zip files from a split zip and can not be unzipped until you have downloaded all of them. To unzip with the Linux zip utility name each file like `src.z01`, `src.z02`, etc. and then combine them via `zip -FF src.zip --out combined.zip` after which you can unzip `combined.zip`. For other zip implementations consult their documentation.
 * Split files
   * [train](./split/train.lst)
   * [validataion](./split/validation.lst)
